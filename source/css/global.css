@@ -1,0 +1,95 @@
+/* montserrat-regular - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/monteserrat_cyrillic/montserrat-v25-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/monteserrat_cyrillic/montserrat-v25-cyrillic-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/monteserrat_cyrillic/montserrat-v25-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/monteserrat_cyrillic/montserrat-v25-cyrillic-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --border-radius: 32px;
+    
+    --text-black: #000;
+    --text-white: #fff;
+
+    --button-default: #FF9900;
+    --button-hover-focus: #FFB84D;
+    --button-active: #E1670E;
+}
+
+body{
+    font-family: Montserrat;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+.button{
+    padding: 20px 38px;
+    border: none;
+    border-radius: 16px;
+
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--text-white);
+
+    cursor: pointer;
+    background-color: var(--button-default);
+}
+
+.button:hover, .button:focus{
+    background-color: var(--button-hover-focus);
+    outline: none;
+}
+
+.button:active{
+    background-color: var(--button-active);
+}
+
+.section__heading{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--text-black);
+}
+
+.imagebox{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
